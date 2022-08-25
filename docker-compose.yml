@@ -2,7 +2,7 @@ version: '3'
 
 services:
   cloudflared:
-    image: ghcr.io/milgradesec/cloudflared:latest
+    image: cloudflare/cloudflared:latest
     command: tunnel --no-autoupdate run --token ${CLOUDFLARED_TUNNEL_TOKEN}
     container_name: cloudflared
     networks:
